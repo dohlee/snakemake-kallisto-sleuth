@@ -1,0 +1,26 @@
+manifest: 'manifest.csv'
+data_dir: 'data'
+result_dir: 'result'
+
+reference:
+    name: 'hg38'
+    prefix: '/data/project/dohoon/reference/hg38/hg38'
+    dir: '/data/project/dohoon/reference/hg38'
+    fasta: '/data/project/dohoon/reference/hg38/Homo_sapiens.GRCh38.cdna.all.fa'
+
+index:
+    kallisto: '/data/project/dohoon/reference/hg38/Homo_sapiens.GRCh38.cdna.all.kallisto_idx'
+
+threads:
+    trim_galore_se: 8
+    trim_galore_pe: 8
+    kallisto_quant: 8
+    sleuth: 16
+
+kallisto_index:
+    extra: ''
+
+kallisto_quant:
+    extra: '-b 100'
+    fragment_length: 75.0
+    standard_deviation: 10.0

@@ -1,0 +1,12 @@
+name: kallisto-sleuth
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - snakemake
+    - trim-galore
+    - multiqc
+    - kallisto
+    - r-sleuth
+    - r-argparse
